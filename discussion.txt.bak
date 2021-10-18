@@ -1,0 +1,47 @@
+Cycle Sort
+
+I chose to discuss the cycle sort method of sorting algorithms.  This method was
+3rd or 4th on my analysis of all sort methods for 100, 1,000, 10,000, and
+100,000 numbers.  It is a middle of the road performance for each set of
+numbers.  I will discuss the algorithm and then my results in the analysis
+section.
+
+Algorithm
+https://en.wikipedia.org/wiki/Cycle_sort
+
+"Cycle sort is an in-place, unstable sorting algorithm" that is "theoretically
+optimal in terms of the total number of writes to the original array, unlike any
+other in-place sorting algorithm."
+
+This algorithm will sort utilizing the minimum number of writes to the sorted
+array.  That means for for large numbers it doesn't move sorts/buckets to the
+end of the array it sorts it in place as it goes along.
+
+This algorithm counts the number of elements that are smaller than any particular
+number in the array you are sorting.  The Big-Oh is O(n) for this algorithm leading
+to a quadratic time performance due to minimization of writes to the sorted array.
+
+Analysis:
+
+100 random numbers from 1-200
+
+standard deviation  = .36.  Indicates algorithm is effective for low number of
+sorts. Rank 3 out of 6 sorting algorithms.
+
+1,000 random numbers from 1-2,000
+
+standard deviation = .024.  Indicates algorithm is effective for low number of
+sorts. Rank 3 out of 6 sorting algorithms.
+
+10,000 random numbers from 1-20,000
+standard deviation = .175.  Indicates algorithm is effective for medium number
+of sorts todo. Rank 4 out of 6 sorting algorithms.
+
+100,000 random numbers from 1-200,000
+
+standard deviation = 15.957. algorithm effects performance. Rank 4 out of 6
+sorting algorithms.
+
+As the cycle sort is a middle of the pack type of the six (6) algorithms we
+performed analysis upon I would recommend it for lower volumes of numbers
+to sort.
